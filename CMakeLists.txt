@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.8)
 
 project("data-structures")
 include_directories(inc)
+set(CMAKE_C_COMPILER /opt/rh/gcc-toolset-10/root/bin/cc)
+set(CMAKE_CXX_COMPILER /opt/rh/gcc-toolset-10/root/bin/c++)
 
 MACRO(SUBDIRLIST result curdir)
   FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)
